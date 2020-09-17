@@ -1,0 +1,106 @@
+/*** THE BODY ***/
+h2 {
+  text-align: center;
+}
+
+#carousel-area {
+  width: 80%;
+  margin: auto;
+}
+
+.about-company-section {
+  padding: 20px;
+}
+
+.about-company-section article header {
+  text-align: center;
+  font-size: 50px;
+}
+
+.about-company-section article p {
+  width: 500px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  #carousel-area {
+    width: auto;
+  }
+  .box-image-area .box-images {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .about-company-section article p {
+    width: auto;
+  }
+}
+
+#new-arrival-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#new-arrival-header h1 {
+  color: orange;
+  font-weight: 800;
+}
+
+#new-arrival-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+#new-arrival-content #awaiting-stuff p {
+  font-size: 80px;
+  color: #b4b4b4;
+  text-align: center;
+}
+
+#new-arrival-content #awaiting-stuff #image-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
+}
+
+#new-arrival-content #awaiting-stuff #image-contents img {
+  border: 1px solid black;
+  width: 30%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  #new-arrival-content #awaiting-stuff #image-contents img {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+#new-arrival-footer {
+  margin: 20px;
+}
+/*# sourceMappingURL=body.css.map */

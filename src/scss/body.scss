@@ -1,0 +1,91 @@
+/*** THE BODY ***/
+h2 {
+    text-align: center;
+
+}
+#carousel-area {
+    width: 80%;
+    margin: auto;
+}
+// About company section
+.about-company-section {
+    padding: 20px;
+    article {
+        header {
+            text-align: center;
+            font-size: 50px;
+        }
+        p {
+            width: 500px;
+            margin: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #carousel-area {
+        width: auto;
+    }
+    .box-image-area {
+        .box-images {
+            margin: auto;
+            margin-bottom: 30px;
+        }
+    }
+    .about-company-section {
+        article {
+            p {
+                width: auto;
+            }
+        }
+    }
+}
+
+
+//For the New Arrival Page & Sale Page
+#new-arrival-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    h1 {
+        color: orange;
+        font-weight: 800;
+    }
+}
+#new-arrival-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: sans-serif;
+    padding: 20px;
+    #awaiting-stuff {
+        p {
+            font-size: 80px;
+            color: #b4b4b4;
+            text-align: center;
+        }
+        #image-contents {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 10px;
+            img {
+                border: 1px solid black;
+                width: 30%;
+                margin: auto;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            #image-contents {
+                img {
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+#new-arrival-footer {
+    margin: 20px;
+}
+

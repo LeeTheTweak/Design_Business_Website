@@ -1,0 +1,292 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*** THE HEADER ***/
+header {
+  font-family: sans-serif;
+}
+
+header #top-nav-area {
+  padding-top: 5px;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header #top-nav-area .top-nav-icons {
+  position: relative;
+  top: 5px;
+  margin-right: 3px;
+}
+
+header #top-nav-area #contact-us-area {
+  position: relative;
+  top: 10px;
+  height: 30px;
+}
+
+header #top-nav-area #contact-us-area p {
+  margin: 0;
+}
+
+header #top-nav-area #contact-us-area p:nth-child(1) {
+  font-weight: bold;
+}
+
+header #top-nav-area #contact-us-area p a {
+  text-decoration: none;
+  color: #474747;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+header #top-nav-area #contact-us-area p a:hover {
+  text-decoration: underline;
+}
+
+header #top-nav-area #currency-converter-area {
+  position: relative;
+  top: 10px;
+  height: 30px;
+}
+
+header #top-nav-area #currency-converter-area select {
+  outline: none;
+  border: none;
+}
+
+header #top-nav-area #site-logo-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 5px;
+}
+
+header #top-nav-area #site-logo-area div {
+  margin: auto;
+}
+
+header #top-nav-area #site-logo-area a {
+  width: 130px;
+  margin: auto;
+}
+
+header #top-nav-area #site-logo-area a img {
+  width: 130px;
+  margin: auto;
+}
+
+header #top-nav-area #site-logo-area p {
+  color: #c5c5c5;
+  font-size: 5vw;
+  font-weight: 700;
+  margin: auto;
+}
+
+header #top-nav-area #site-logo-area p span {
+  color: #f78f08;
+}
+
+header #top-nav-area #site-logo-area input {
+  margin: auto;
+  width: 150px;
+  background-color: #f78f08;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+header #top-nav-area #sign-in-area {
+  position: relative;
+  top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 30px;
+}
+
+header #top-nav-area #sign-in-area p {
+  margin: 0;
+  transition: .3s ease;
+  -moz-transition: .3s ease;
+  -webkit-transition: .3s ease;
+}
+
+header #top-nav-area #sign-in-area p:hover {
+  cursor: pointer;
+  color: #c5c5c5;
+}
+
+header #top-nav-area #shopping-cart-area {
+  position: relative;
+  top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 30px;
+}
+
+header #top-nav-area #shopping-cart-area p {
+  margin: 0;
+  transition: .3s ease;
+  -moz-transition: .3s ease;
+  -webkit-transition: .3s ease;
+}
+
+header #top-nav-area #shopping-cart-area p:hover {
+  cursor: pointer;
+  color: #c5c5c5;
+}
+
+header #sub-selection-nav-area {
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+header #sub-selection-nav-area #sub-selection-nav {
+  width: auto;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header #sub-selection-nav-area #sub-selection-nav p {
+  margin: 0;
+  padding: 5px;
+  text-transform: uppercase;
+  transition: .3s ease;
+  -moz-transition: .3s ease;
+  -webkit-transition: .3s ease;
+}
+
+header #sub-selection-nav-area #sub-selection-nav p:hover {
+  cursor: pointer;
+  color: #f78f08;
+}
+
+header .advertisement-1 {
+  padding: 30px;
+  text-align: center;
+}
+
+header #exclusive-deals-area {
+  padding: 10px;
+}
+
+header #exclusive-deals-area #exclusive-deals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header #exclusive-deals-area #exclusive-deals div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: grey;
+  border-radius: 5px;
+  padding: 15px;
+  color: white;
+}
+
+header #exclusive-deals-area #exclusive-deals div .exclusive-deals-icons i {
+  font-size: 50px;
+}
+
+header #exclusive-deals-area #exclusive-deals div .exclusive-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+header #exclusive-deals-area #exclusive-deals div .exclusive-description p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  header #top-nav-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header #top-nav-area #shopping-cart-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px;
+    height: 30px;
+    position: none;
+  }
+  header #top-nav-area #contact-us-area {
+    text-align: center;
+    position: none;
+  }
+  header #top-nav-area #site-logo-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+  }
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,55 @@
+/*** THE BODY ***/
+#carousel-area {
+  width: 80%;
+  margin: auto; }
+
+.box-image-area {
+  display: flex;
+  flex-direction: column;
+  margin: 20px; }
+  .box-image-area img {
+    width: 250px; }
+    .box-image-area img:hover {
+      cursor: pointer;
+      transform: scale(1.2, 1.2); }
+  .box-image-area .box-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: space-around; }
+    .box-image-area .box-images div {
+      margin-right: 10px; }
+    .box-image-area .box-images #visit-art-shop {
+      flex-grow: 2;
+      background: #f78f08;
+      border-radius: 10px;
+      opacity: 0.8;
+      color: white;
+      text-align: center; }
+      .box-image-area .box-images #visit-art-shop:hover {
+        transform: scale(1.2, 1.2); }
+      .box-image-area .box-images #visit-art-shop p {
+        margin: 0;
+        margin-top: 10px;
+        font-family: sans-serif; }
+        .box-image-area .box-images #visit-art-shop p:nth-child(1) {
+          font-size: 35px; }
+        .box-image-area .box-images #visit-art-shop p:nth-child(2) {
+          font-size: 20px; }
+      .box-image-area .box-images #visit-art-shop button {
+        border: none;
+        border-radius: 5px;
+        background: #e65e04;
+        color: white;
+        font-size: 20px;
+        margin-top: 10px;
+        padding: 0 10px 0 10px;
+        transition: .3s ease-in-out; }
+        .box-image-area .box-images #visit-art-shop button:hover {
+          background: black;
+          color: #e65e04; }
+
+/*# sourceMappingURL=body.css.map */
