@@ -2,7 +2,7 @@
 /*** Loading the New Arrivals Page ***/
     $("#sub-selection-nav p:nth-child(1)").click( () => {
         console.log("Web Icons page was clicked");
-        $("#body-wrapper").load("../../WebIcons.html", (responseTxt, statusTxt, jqXHR) => {
+        $("#body-wrapper").load("../WebIcons.html", (responseTxt, statusTxt, jqXHR) => {
             if(statusTxt == "success") {
                 console.log("Web Icons Page loaded successfully");
             }
@@ -15,7 +15,7 @@
     /*** Loading the Apparel Page ***/
     $("#sub-selection-nav p:nth-child(2)").click( () => {
         console.log("Apparel page was clicked.");
-        $("#body-wrapper").load("../../apparel.html", (responseTxt, statusTxt, jqXHR) => {
+        $("#body-wrapper").load("../apparel.html", (responseTxt, statusTxt, jqXHR) => {
             if(statusTxt == "success") {
                 console.log("Apparel content loaded successfully.");
             }
@@ -28,11 +28,11 @@
 /*** Loading the Art Page ***/
     $("#visit-art-shop button").click( () => {
         console.log("Explore button was clicked.");
-        $("#body-wrapper").load("art.html");
+        $("#body-wrapper").load("../art.html");
     });
     $("#sub-selection-nav p:nth-child(3)").click( () => {
         console.log("Art page was clicked.");
-        $("#body-wrapper").load("../../art.html", function(responseTxt, statusTxt, jqXHR){
+        $("#body-wrapper").load("../art.html", function(responseTxt, statusTxt, jqXHR){
             if(statusTxt == "success") {
                 console.log("Art content loaded successfully.");
             }
@@ -72,7 +72,7 @@
     /*** Loading the Illustrations Page ***/
     $("#sub-selection-nav p:nth-child(6)").click( () => {
         console.log("Illustration page was clicked");
-        $("#body-wrapper").load("../../illustrations.html", (responseTxt, statusTxt, jqXHR) => {
+        $("#body-wrapper").load("../illustrations.html", (responseTxt, statusTxt, jqXHR) => {
             if(statusTxt == "success") {
                 console.log("illustrations page content loaded successfully.");
             }
