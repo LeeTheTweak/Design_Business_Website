@@ -2,7 +2,7 @@
 /*** Loading the New Arrivals Page ***/
     $("#sub-selection-nav p:nth-child(1)").click( () => {
         console.log("Web Icons page was clicked");
-        $("#body-wrapper").load("WebIcons.html", (responseTxt, statusTxt, jqXHR) => {
+        $("#body-wrapper").load("/WebIcons.html", (responseTxt, statusTxt, jqXHR) => {
             if(statusTxt == "success") {
                 console.log("Web Icons Page loaded successfully");
             }
