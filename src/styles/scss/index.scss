@@ -1,0 +1,60 @@
+@import "./colors";
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+/**** THE MAIN BODY ****/
+
+
+
+/* THE HEADER */
+header {
+    margin: 0;
+    padding: 0;
+    /* THE NAVIGATION SECTION */
+    .nav-section {
+        /* For all links in the navigation */
+        a {
+            color: white;
+            text-decoration: none;
+            transition: .3s ease-in-out;
+            &:hover {
+                text-shadow: 5px 5px 20px white;
+            }
+        }
+        color: white;
+        display: flex;
+        background: $mainOrange;
+        .nav-container {
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* WEBSITE TITLE */
+            .title {
+                h2 {
+                    margin: 0;
+                }
+            }
+            /* MAIN NAVIGATION AND ITS UNLISTED LIST */
+            .nav {
+                justify-content: space-between;
+                margin-top: 5px;
+                ul {
+                    margin: 0;
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    li {
+                        margin: 0 10px 0 10px;
+                    }
+                }
+            }
+        }
+    }
+}
