@@ -27,8 +27,8 @@ header {
             }
         }
         color: white;
-        display: flex;
         background: $mainOrange;
+        /* NAVIGATION CONTAINER */
         .nav-container {
             padding: 5px;
             display: flex;
@@ -42,7 +42,6 @@ header {
             }
             /* MAIN NAVIGATION AND ITS UNLISTED LIST */
             .nav {
-                justify-content: space-between;
                 margin-top: 5px;
                 ul {
                     margin: 0;
@@ -51,7 +50,12 @@ header {
                     flex-direction: row;
                     flex-wrap: wrap;
                     li {
-                        margin: 0 10px 0 10px;
+                        a {
+                            margin: 0 10px 0 10px;
+                            &:hover {
+                                border-bottom: white solid 5px; 
+                            }
+                        }
                     }
                 }
             }
