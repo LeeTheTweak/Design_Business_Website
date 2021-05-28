@@ -1,22 +1,28 @@
 @import "./colors";
 
 body {
+    font-family: "Anton", sans-serif;
     margin: 0 auto;
     padding: 0;
+    width: 100%;
 }
 
 
 
-/**** THE MAIN BODY ****/
+/**** START ****/
 
 
 
 /* THE HEADER */
+
 header {
     margin: 0;
     padding: 0;
     /* THE NAVIGATION SECTION */
     .nav-section {
+        position: fixed;
+        width: 100%;
+        z-index: 1;
         /* For all links in the navigation */
         a {
             color: white;
@@ -37,6 +43,7 @@ header {
             /* WEBSITE TITLE */
             .title {
                 h2 {
+                    text-shadow: 5px 5px 20px yellow;
                     margin: 0;
                 }
             }
@@ -61,4 +68,120 @@ header {
             }
         }
     }
+    /* THE BANNER SECTION */ 
+    .banner-section {
+        padding-top: 3%;
+    }
+}
+
+
+
+/* THE BODY AREA */
+
+
+
+/* MORE TO EXPLORE SECTION */ 
+
+.check-it-out-section {
+    margin-top: 40px;
+    padding: 0 40px 0 40px;
+    .check-it-title {
+        color: $orange-2;
+        padding: 0;
+        margin: 0;
+    }
+
+    .check-it-content-wrapper {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        a {
+            margin: 20px;
+            text-decoration: none;
+            color: $black-1;
+            figure {
+                opacity: .9;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 400px;
+                height: 500px;
+                background-color: $orange-1;
+                transition: .4s ease-in-out;
+                &:hover {
+                    background-color: $orange-0;
+                    opacity: 1.0;
+                }
+            }
+            figcaption {
+                  font-size: 25px;  
+            }
+            .logos-card {
+                background-image: url("/src/images/logos.png");
+                background-size: 100%;
+                transition: .3s ease-in-out;
+                &:hover {
+                    background-position: -250px -200px;
+                    background-size: 900px;
+                }
+            }
+            .graphic-tee-card {
+                background-image: url("/src/images/graphicTees.jpg");
+                background-size: 100%;
+                transition: .3s ease-in-out;
+                &:hover {
+                    background-size: 1000px;
+                    background-position: -300px -650px;
+                }
+            }
+            .content-creation-card {
+                background-image: url("/src/images/contentCreation.png");
+                background-size: 600px;
+                background-position: -120px -50px;
+                transition: .3s ease-in-out;
+                &:hover {
+                    background-size: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* THE INTRODUCING SECTION */ 
+
+
+.introducing-section-container {
+    text-align: center;
+    width: 70%;
+    margin: 10px auto 10px auto;
+    a{
+        text-decoration: none;
+    }
+    .introducing {
+        figure {
+            img {
+                border-radius: 6px;
+                width: 90%;
+            }
+        }
+        figcaption {
+            color: $black-1;
+            font-size: 50px;
+        }
+    }
+}
+
+
+/** THE FOOTER SECTION **/
+
+
+
+footer {
+    color: white;
+    background-color: $black-1;
+    padding: 30px;
+
 }

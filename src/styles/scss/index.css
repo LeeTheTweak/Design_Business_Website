@@ -1,17 +1,23 @@
 body {
+  font-family: "Anton", sans-serif;
   margin: 0 auto;
   padding: 0;
+  width: 100%;
 }
 
-/**** THE MAIN BODY ****/
+/**** START ****/
 /* THE HEADER */
 header {
   margin: 0;
   padding: 0;
   /* THE NAVIGATION SECTION */
+  /* THE BANNER SECTION */
 }
 
 header .nav-section {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   /* For all links in the navigation */
   color: white;
   background: #ff9f4a;
@@ -45,6 +51,7 @@ header .nav-section .nav-container {
 }
 
 header .nav-section .nav-container .title h2 {
+  text-shadow: 5px 5px 20px yellow;
   margin: 0;
 }
 
@@ -72,5 +79,128 @@ header .nav-section .nav-container .nav ul li a {
 
 header .nav-section .nav-container .nav ul li a:hover {
   border-bottom: white solid 5px;
+}
+
+header .banner-section {
+  padding-top: 3%;
+}
+
+/* THE BODY AREA */
+/* MORE TO EXPLORE SECTION */
+.check-it-out-section {
+  margin-top: 40px;
+  padding: 0 40px 0 40px;
+}
+
+.check-it-out-section .check-it-title {
+  color: #fcd07e;
+  padding: 0;
+  margin: 0;
+}
+
+.check-it-out-section .check-it-content-wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.check-it-out-section .check-it-content-wrapper a {
+  margin: 20px;
+  text-decoration: none;
+  color: #575757;
+}
+
+.check-it-out-section .check-it-content-wrapper a figure {
+  opacity: .9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 500px;
+  background-color: #fff2db;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.check-it-out-section .check-it-content-wrapper a figure:hover {
+  background-color: #fffaf2;
+  opacity: 1.0;
+}
+
+.check-it-out-section .check-it-content-wrapper a figcaption {
+  font-size: 25px;
+}
+
+.check-it-out-section .check-it-content-wrapper a .logos-card {
+  background-image: url("/src/images/logos.png");
+  background-size: 100%;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.check-it-out-section .check-it-content-wrapper a .logos-card:hover {
+  background-position: -250px -200px;
+  background-size: 900px;
+}
+
+.check-it-out-section .check-it-content-wrapper a .graphic-tee-card {
+  background-image: url("/src/images/graphicTees.jpg");
+  background-size: 100%;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.check-it-out-section .check-it-content-wrapper a .graphic-tee-card:hover {
+  background-size: 1000px;
+  background-position: -300px -650px;
+}
+
+.check-it-out-section .check-it-content-wrapper a .content-creation-card {
+  background-image: url("/src/images/contentCreation.png");
+  background-size: 600px;
+  background-position: -120px -50px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.check-it-out-section .check-it-content-wrapper a .content-creation-card:hover {
+  background-size: 100%;
+}
+
+/* THE INTRODUCING SECTION */
+.introducing-section-container {
+  text-align: center;
+  width: 70%;
+  margin: 10px auto 10px auto;
+}
+
+.introducing-section-container a {
+  text-decoration: none;
+}
+
+.introducing-section-container .introducing figure img {
+  border-radius: 6px;
+  width: 90%;
+}
+
+.introducing-section-container .introducing figcaption {
+  color: #575757;
+  font-size: 50px;
+}
+
+/** THE FOOTER SECTION **/
+footer {
+  color: white;
+  background-color: #575757;
+  padding: 30px;
 }
 /*# sourceMappingURL=index.css.map */
