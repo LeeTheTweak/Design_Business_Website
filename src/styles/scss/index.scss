@@ -36,6 +36,7 @@ header {
         background: $mainOrange;
         /* NAVIGATION CONTAINER */
         .nav-container {
+            justify-content: space-between;
             padding: 5px;
             display: flex;
             flex-direction: row;
@@ -44,14 +45,15 @@ header {
             .title {
                 h2 {
                     text-shadow: 5px 5px 20px yellow;
-                    margin: 0;
+                    margin-top: 10px;
                 }
             }
             /* MAIN NAVIGATION AND ITS UNLISTED LIST */
             .nav {
-                margin-top: 5px;
+                margin-top: 20px;
                 ul {
                     margin: 0;
+                    padding: 0;
                     list-style-type: none;
                     display: flex;
                     flex-direction: row;
@@ -65,6 +67,9 @@ header {
                         }
                     }
                 }
+            }
+            .crypto-ticker {
+                
             }
         }
     }
@@ -157,19 +162,47 @@ header {
     text-align: center;
     width: 70%;
     margin: 10px auto 10px auto;
+    color: $black-1;
+    background: $orange-2;
+    border-radius: 20px;
     a{
         text-decoration: none;
+        color: $black-1;
     }
     .introducing {
-        figure {
-            img {
-                border-radius: 6px;
-                width: 90%;
-            }
+        text-transform: uppercase;
+        color: white;
+        text-shadow: 5px 5px 10px black;
+        width: 100%;
+        padding: 150px;
+        background-image: url("/src/images/introMerch.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        border-radius: 20px;
+        img {
+            width: 30vw;
         }
-        figcaption {
-            color: $black-1;
-            font-size: 50px;
+        .intro-heading {
+            font-size: 5vw;
+        }
+        .intro-sub {
+            font-size: 2vw;
+        }
+        .intro-buttons {
+            button {
+                font-size: 50px;
+                padding: 5px 40px 5px 40px;
+                border: none;
+                border-radius: 50px;
+                background: $orange-2;
+                color: white;
+                margin-top: 30px;
+                transition: .2s ease-in-out;
+                &:hover {
+                    opacity: 0.5
+                }
+            }
         }
     }
 }

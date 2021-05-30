@@ -36,6 +36,9 @@ header .nav-section a:hover {
 }
 
 header .nav-section .nav-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,15 +55,16 @@ header .nav-section .nav-container {
 
 header .nav-section .nav-container .title h2 {
   text-shadow: 5px 5px 20px yellow;
-  margin: 0;
+  margin-top: 10px;
 }
 
 header .nav-section .nav-container .nav {
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 header .nav-section .nav-container .nav ul {
   margin: 0;
+  padding: 0;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,7 +97,7 @@ header .banner-section {
 }
 
 .check-it-out-section .check-it-title {
-  color: #fcd07e;
+  color: #ffcfa2;
   padding: 0;
   margin: 0;
 }
@@ -181,20 +185,55 @@ header .banner-section {
   text-align: center;
   width: 70%;
   margin: 10px auto 10px auto;
+  color: #575757;
+  background: #ffcfa2;
+  border-radius: 20px;
 }
 
 .introducing-section-container a {
   text-decoration: none;
-}
-
-.introducing-section-container .introducing figure img {
-  border-radius: 6px;
-  width: 90%;
-}
-
-.introducing-section-container .introducing figcaption {
   color: #575757;
+}
+
+.introducing-section-container .introducing {
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+  width: 100%;
+  padding: 150px;
+  background-image: url("/src/images/introMerch.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+.introducing-section-container .introducing img {
+  width: 30vw;
+}
+
+.introducing-section-container .introducing .intro-heading {
+  font-size: 5vw;
+}
+
+.introducing-section-container .introducing .intro-sub {
+  font-size: 2vw;
+}
+
+.introducing-section-container .introducing .intro-buttons button {
   font-size: 50px;
+  padding: 5px 40px 5px 40px;
+  border: none;
+  border-radius: 50px;
+  background: #ffcfa2;
+  color: white;
+  margin-top: 30px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.introducing-section-container .introducing .intro-buttons button:hover {
+  opacity: 0.5;
 }
 
 /** THE FOOTER SECTION **/
